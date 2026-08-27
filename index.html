@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="mode" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,53 +11,57 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
     <link rel="manifest" href="assets/site.webmanifest">
 </head>
+
 <body>
-    <button class="menu-button" id="menuButton" aria-label="menu" aria-expanded="false"> <i class="fas fa-bars" aria-hidden="true"></i> </button>
-        <nav id="menu" class="hidden menu">
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="pages/about.html">About Me</a>
-                <a href="pages/eternity.html">Eternity</a>
-                <a href="pages/music.html">Music</a>
-                <a href="pages/cs_projects.html">Projects</a>
-            </div>
-            <div class="nav-socials">
-                <a href="https://www.instagram.com/ero.nium/" target="_blank" rel="noopener noreferrer" aria-label="instagram"><i class = "fab fa-instagram" aria-hidden="true"></i></a>
-                <a href="https://github.com/Eronium0" target="_blank" rel="noopener noreferrer" aria-label="github"><i class = "fab fa-github" aria-hidden="true"></i></a>
-                <a href="https://open.spotify.com/artist/5apVfVgsmf4TuO3htzg63E?si=SBFJqs63T7mDn9Ksaw8Bpw" target="_blank" rel="noopener noreferrer" aria-label="spotify"><i class = "fab fa-spotify" aria-hidden="true"></i></a>
-            </div>
-        </nav>
-    <main class="main">    
-    <h1>Welcome to NX.</h1>
-    <p>The place where I keep all things stories, music, projects, and more cooped up!</p>
-    </main>
-    <div class="grid">        
-        <a href="pages/about.html">
-            <div class="grid-item">
-                <h2>About Me</h2>
-                <p>Learn more about me and my journey.</p>
-            </div>
-        </a>    
-        <a href="pages/eternity.html">
-            <div class="grid-item">
-                <h2>Eternity</h2>
-                <p>Delve into the world of Eternity.</p>
-            </div>
-        </a>
-        <a href="pages/music.html">
-            <div class="grid-item">
-                <h2>Music</h2>
-                <p>Listen to all things Eronium.</p>
-            </div>
-        </a>
-        <a href="pages/cs_projects.html">
-            <div class="grid-item">
-                <h2>Projects</h2>
-                <p>Explore completed and WIP projects.</p>
-            </div>
-        </a>
+<hr class="divider">
+    <div>
+        <video id="vid1" src="assets/eronium_chill.mp4" loop playsinline autoplay aria-hidden="true"></video>
+    </div>
+
+    <div>
+        <video id="vid2" src="assets/eronium_wave.mp4"  loop playsinline autoplay aria-hidden="true"></video>
+    </div>
+
+    <div class="mii-gif-left">
+        <canvas id="MiiChar1" width="300" height="300" aria-hidden="true"></canvas>
 
     </div>
+
+    <div class="mii-gif-right">
+        <canvas id="MiiChar2" width="300" height="300" aria-hidden="true"></canvas>
+    </div>
+
+    <button class="ldtoggle" id="LDToggle" aria-label="Toggle light and dark mode"><i id="modo"  class="fas fa-sun fas fa-moon" aria-hidden="true"></i></button>
+
+    <main class="main">  
+    <div class="logo-box">
+        <img class="logo" id="logo_light" src="assets/logo_almond.PNG" alt="NX logo">
+        <img class="hidden logo2" id="logo_dark"  src="assets/logo_black.PNG" alt="NX logo">
+    </div>      
+
+    <h1>Welcome to NX.</h1>
+    <p>An archive of my works.</p>
+    </main>
+
+    <section class="selections" id="selections">
+        <a href="pages/about.html" id="about" data-message="Get to know who I am and my journey so far."><span> About Me</span></a>
+        <a href="pages/btv.html" id="btv" data-message="Somewhere, Nowhere, Yet Still There. Take a peek at the story I am developing, Beyond The Veil."><span> Beyond The Veil</span></a> 
+        <a href="pages/music.html" id="music" data-message="Check out everything and anything related to my music!"><span> Music </span></a>
+        <a href="pages/cs_projects.html" id="proj" data-message="All of my finished and in progress projects."><span> Projects </span></a>
+    </section>
+    
+    <div class="outer-screen">
+        <div class="inner-screen">
+            <p id="screen-text"></p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Eronium 2026</p>
+
+    </footer>
+<script src="index_script.js"></script>
 </body>
-<script src="scripts/menu.js"></script>
+
+
 </html>

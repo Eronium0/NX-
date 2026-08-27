@@ -415,6 +415,12 @@ body {
     background: var(--space-indigo);
 }
 
+body::-webkit-scrollbar{
+    display: none;
+}
+
+
+
 :focus-visible {
     outline: 2px solid var(--ink-black);
     outline-offset: 2px;
