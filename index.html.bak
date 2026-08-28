@@ -22,22 +22,22 @@
         <video id="vid2" src="assets/eronium_wave.mp4"  loop playsinline autoplay aria-hidden="true"></video>
     </div>
 
-    <button class="ldtoggle" id="LDToggle" aria-label="Toggle light and dark mode"><i id="modo"  class="fas fa-sun fas fa-moon" aria-hidden="true"></i></button>
-
-    <div class="hub">
     <div class="mii-gif-left">
         <canvas id="MiiChar1" width="300" height="300" aria-hidden="true"></canvas>
+
     </div>
 
     <div class="mii-gif-right">
         <canvas id="MiiChar2" width="300" height="300" aria-hidden="true"></canvas>
     </div>
 
-    <main class="main">
+    <button class="ldtoggle" id="LDToggle" aria-label="Toggle light and dark mode"><i id="modo"  class="fas fa-sun fas fa-moon" aria-hidden="true"></i></button>
+
+    <main class="main">  
     <div class="logo-box">
         <img class="logo" id="logo_light" src="assets/logo_almond.PNG" alt="NX logo">
         <img class="hidden logo2" id="logo_dark"  src="assets/logo_black.PNG" alt="NX logo">
-    </div>
+    </div>      
 
     <h1>Welcome to NX.</h1>
     <p>An archive of my works.</p>
@@ -45,16 +45,15 @@
 
     <section class="selections" id="selections">
         <a href="pages/about.html" id="about" data-message="Get to know who I am and my journey so far."><span> About Me</span></a>
-        <a href="pages/btv.html" id="btv" data-message="Somewhere, Nowhere, Yet Still There. Take a peek at the story I am developing, Beyond The Veil."><span> Beyond The Veil</span></a>
+        <a href="pages/btv.html" id="btv" data-message="Somewhere, Nowhere, Yet Still There. Take a peek at the story I am developing, Beyond The Veil."><span> Beyond The Veil</span></a> 
         <a href="pages/music.html" id="music" data-message="Check out everything and anything related to my music!"><span> Music </span></a>
         <a href="pages/cs_projects.html" id="proj" data-message="All of my finished and in progress projects."><span> Projects </span></a>
     </section>
-
+    
     <div class="outer-screen">
         <div class="inner-screen">
             <p id="screen-text"></p>
         </div>
-    </div>
     </div>
 
     <footer class="footer">
