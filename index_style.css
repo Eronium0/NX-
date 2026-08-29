@@ -212,6 +212,7 @@ video{
     align-self: center;
     height: 20rem;
     width: 100%;
+    min-width: 0;
     background-color: var(--screen-edge);
     border-radius: 1.5rem;
     justify-content: center;
@@ -223,19 +224,23 @@ video{
 .inner-screen{
     height: 100%;
     width: 100%;
+    min-width: 0;
     background-color: var(--screen);
     border-radius: 1rem;
     color: var(--altxt);
     font-family: "Ubuntu";
-    font-size: 1.6rem;
+    font-size: 1.55rem;
     overflow: hidden;
     text-align: center;
+    overflow-wrap: break-word;
 }
 
 .inner-screen p{
-    margin-top: 6rem;
-    margin-left: 1.5rem;
+    max-width: 40rem;
+    margin: 6rem auto 0;
+    padding: 0 1.5rem;
     line-height: 3rem;
+    box-sizing: border-box;
 }
 
 @media (max-width: 600px), (max-width: 1024px) and (orientation: portrait) {
